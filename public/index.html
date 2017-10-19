@@ -18,14 +18,51 @@
                 <h1>How familiar are you with our world's flood history?</h1>
                 <p>Test your knowledge with trivia and learn in the process!</p>
                 <div class="text-center">
-                    <a href="#" class="btn btn-lg btn-info text-center" role="button">Start Now</a>               
+                    <button onclick="onStartClicked(event);">Start Now</button>
                 </div>
             </div>
         </div>
-        
+        <div class="row text-center">
+            <div class="col align-self-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title"><div id="question"></div></h4>
+                        <p class="card-text"><div id="choices"></div></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col align-self-center">
+                <div id="results-html-group" class="d-none">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Trivia Results</h4>
+                            <p class="card-text"><div id="results"></div></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="container">
+                <div id="data-html-group" class="d-none" >
+                    <div id="data"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col align-self-center">
+                <div id="next-question" class="row d-none text-center">
+                    <button class="btn btn-lg btn-info text-center">Next Question</button>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="bundle.js"></script>
+        <script src="https://unpkg.com/lodash@4.16.6"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.min.js"></script>
+        <script type="text/javascript" src="flood-trivia.js"></script>
     </body>
 </html>
