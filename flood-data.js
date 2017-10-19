@@ -1,3 +1,5 @@
+"use strict";
+
 const http = require("http");
 const fs = require('fs');
 var xlsx = require('xlsx');
