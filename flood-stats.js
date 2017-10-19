@@ -12,7 +12,11 @@ class FloodStatsGenerator {
                         .groupBy("$.getYear()", 
                                 "g => g",
                                 "yr, grp => { year: yr, count:grp.count() }")
-                        .toArray();
+                        .toArray()
+                        .filter(function (f) {
+                            let filtered = (f.year !== 1900) && (!isNaN(f.year));
+                            return filtered;
+                        });
     }
 }
 
