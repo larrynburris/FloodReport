@@ -1,5 +1,6 @@
-const Enumerable = require("linq");
+"use strict";
 
+const Enumerable = require("linq");
 
 class FloodStatsGenerator {
 

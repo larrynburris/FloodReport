@@ -1,3 +1,5 @@
+"use strict";
+
 const parser = require("./parsers");
 
 class FloodEvent {
